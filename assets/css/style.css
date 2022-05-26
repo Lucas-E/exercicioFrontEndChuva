@@ -1,0 +1,117 @@
+/*Css da barra esquerda*/
+.barra-esquerda{
+    width: 220px;
+}
+.header-barra-esquerda{
+    height: 68px;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%)
+}
+.header-barra-esquerda-text{
+    font-size: 30px;
+    line-height: 60px;
+    text-decoration: none;
+}
+.barra-esquerda-menu li{
+    list-style: none;
+    text-decoration: none;
+    height: 33px;
+    width: 100%;
+}
+.email{
+    font-size: 13px;
+}
+
+/*css do conteúdo*/
+.header-conteudo{
+    min-height: 68px;
+}
+.item{
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #c2c2c2;
+}
+/*Degini esse css para, quando a tela estiver pequena, eu dar margens, já que o bootstrap não estava funcionando para este caso*/
+@media only screen and (max-width: 768px){
+    .mt-sm-1-own{
+        margin-top: 10px;
+    }
+    .mt-sm-2-own{
+        margin-top: 20px;
+    }
+    .mt-sm-3-own{
+        margin-top: 30px;
+    }
+    .mt-sm-4-own{
+        margin-top: 40px;
+    }
+    .mt-sm-5-own{
+        margin-top: 50px;
+    }
+}
+/*Essa parte dá height de 100vh para a barra lateral quando o display estiver em 768px*/
+@media only screen and (min-width: 992px){
+    .sidebar-lg{
+        height: 100vh;
+    }
+    .active-item::before{
+        content: "";
+        background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+        width: 5px;
+        height: 34px;
+        position:absolute;
+        margin-right: 10px
+    }
+}
+
+/*css dos itens do card de discussão*/
+.discussion-items *{
+    margin: auto;
+}
+.info-text{
+    font-size: 14px;
+}
+.topic-button{
+    position: absolute;
+    top: 180px;
+}
+.author-name{
+    font-size: 12px;
+}
+.question{
+    font-size: 14px;
+    color: #4D4D4D;
+}
+.question-like-answer{
+    color:#757575;
+    font-size: 14px;
+}
+
+/*Css da segunda parte do conteúdo, onde fica uma barra com os botões de download, favoritar e DOI*/
+.authors-items{
+    margin: 1px;
+    font-size: 14px;
+}
+
+.details{
+    margin: 0px;
+    font-size: 12px;
+}
+
+.university-items{
+    font-size: 12px;
+    color: #5C5C5C;
+    margin: 0px;
+}
+
+
+.active-item{
+    background-color: #FDF1EB;
+}
+
+.text-orange{
+    color: #ED7839
+}
+
+.background-orange{
+    background-color: #ED7839;
+}
