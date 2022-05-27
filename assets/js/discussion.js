@@ -154,5 +154,6 @@ function answerSent(id){
 function passId(id){
     let answerButton = document.querySelector('#sendAnswerButton');
     console.log(answerButton)
+    //aqui a função atribui a função com parâmetro correto ao botão de enviar do modal
     answerButton.setAttribute('onclick',`answerSent("${id}")`)
 }
