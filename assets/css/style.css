@@ -28,15 +28,17 @@
 }
 
 /*css do conteúdo*/
+.anais-font{
+    font-size: 22px;
+}
 .header-conteudo{
     min-height: 68px;
 }
 .item{
     display: block;
     padding: 5px;
-    border-bottom: 1px solid #c2c2c2;
 }
-/*Degini esse css para, quando a tela estiver pequena, eu dar margens, já que o bootstrap não estava funcionando para este caso*/
+/*Defini esse css para quando a tela estiver pequena eu dar margens já que o bootstrap não estava funcionando para este caso*/
 @media only screen and (max-width: 768px){
     .mt-sm-1-own{
         margin-top: 10px;
