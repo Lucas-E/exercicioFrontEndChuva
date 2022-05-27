@@ -121,5 +121,9 @@
 }
 
 .background-orange{
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+}
+
+.background-orange-solid{
     background-color: #ED7839;
 }

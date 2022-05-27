@@ -21,6 +21,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+    <!--fonte google para adicionar a font roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
 
     <title>SLACA 2019</title>
   </head>
@@ -30,10 +35,10 @@
         <!--row principal, aqui vai ficar a barra lateral e o menu principal-->
         <div class="row">
             <!--Sidebar, a partir de 996px ela ocupa 2 col do grid do bootstrap, antes disso ela ocupa 100 além disso, quando ela ocupa 2 col, ela ocupa 100% do vh-->
-            <div class="col-12 col-sm-12 col-md-12 col-lg-2 m-0 p-0 sidebar sidebar-lg">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-2 m-0 p-0 sidebar sidebar-lg navbar-expand-lg">
                 <header class="header-barra-esquerda">
                     <p class="header-barra-esquerda-text text-white text-center">
-                        Slaca 2019
+                        <span class="font-weight-bold">SLACA 2019</span>
                         <!--Toggle button do bootstrap que fazer o toggle do menu-->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fa-solid fa-bars"></i>
@@ -43,13 +48,13 @@
                 <!--Imagem do Slaca, quando bate 996px ela aparece, caso não, ela some-->
                 <img src="assets/img/dewey-4.png" alt="" class="d-none d-lg-block img-fluid">
                 <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="list-group navbar-nav" >
+                    <ul class="list-group navbar-nav d-flex flex-column w-100">
                         <li class="nav-item border-bottom"><a href="" class="text-dark item ml-4">Apresentação</a></li>
                         <li class="nav-item border-bottom"><a href="" class="text-dark item ml-4">Comitês</a></li>
                         <li class="nav-item border-bottom"><a href="" class="text-dark item ml-4">Autores</a></li>
                         <li class="nav-item border-bottom"><a href="" class="text-dark item ml-4">Eixos temáticos</a></li>
                         <li class="nav-item active-item border-bottom"><a href="" class="text-dark item ml-4">Trabalhos</a></li>
-                        <li class="nav-item border-bottom"><a href="" class="text-dark item">Contato</a></li>
+                        <li class="nav-item border-bottom"><a href="" class="text-dark item ml-4">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,9 +65,9 @@
                 <header class="bg-light px-5 header-conteudo">
                     <div class="d-flex justify-content-between flex-wrap">
                         <div class="mb-3 align-self-center">
-                            <p class="m-0 font-weight-light">Anais do Simpósio Latino Americano de Ciências de Alimentos </p>
-                            <p class="m-0 font-weight-bold anais-font">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </p>
-                            <p class="m-0 font-weight-light">ISSN: 1234-5678</p>
+                            <p class="m-0 font-weight-light font-roboto">Anais do Simpósio Latino Americano de Ciências de Alimentos </p>
+                            <p class="m-0 font-weight-bold anais-font font-roboto">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </p>
+                            <p class="m-0 font-weight-light font-roboto">ISSN: 1234-5678</p>
                         </div>
                         <hr class="d-none d-sm-block">
                         <div class="mx-4 align-self-center mb-sm-2">
@@ -87,27 +92,27 @@
                     </div>
                 </header>
                 <!--Aqui começa o menu principal-->
-                <!--Eu dividi o menu principal em 4 rows, sendo elas uma para a parte do vídeo e botões de download, favorito, doi, e a lista de integrantes e universidade-->
+                <!--Eu dividi o menu principal em 3 rows, sendo elas uma para a parte do vídeo e botões de download, favorito, doi, e a lista de integrantes e universidade-->
                 <!--Outra row para o Resumo e Discussões-->
                 <!--E finalmente uma row para o footer-->
                 <div class="px-5 pt-4 bg-white rounded m-1">
                     <div class="row">
                             <div class="col-md-8">
                                 <h4 class="text-orange text-justify">
-                                    <p class="font-weight-bold">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</p> 
+                                    <p class="font-weight-bold font-roboto">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</p> 
                                 </h4>
                                 <img src="assets/img/video-presentation.png" class="img-fluid" alt="">
                             </div>
                             <div class="col-md-4">
                                 <div class="d-flex flex-row justify-content-between flex-wrap mt-sm-3-own">
-                                    <button class="btn background-orange text-white mt-1 py-0"><span><i class="fa-solid fa-download"></i></span> Download</button>
-                                    <button class="btn background-orange text-white mt-1 py-0"><span><i class="fa-solid fa-star text-white p-1"></i></span></button>
-                                    <button class="btn background-orange text-white mt-1 py-0"><i class="ai ai-doi text-white"></i></button>
+                                    <button class="btn background-orange-solid text-white mt-1 py-0 font-roboto"><span><i class="fa-solid fa-download"></i></span> Download</button>
+                                    <button class="btn background-orange-solid text-white mt-1 py-0"><span><i class="fa-solid fa-star text-white p-1"></i></span></button>
+                                    <button class="btn background-orange-solid text-white mt-1 py-0"><i class="ai ai-doi text-white"></i></button>
                                 </div>
-                                <h4 class="text-orange text-justify mt-2">Como Citar esse trabalho?</h4>
+                                <h4 class="text-orange text-justify mt-2 font-weight-bold font-roboto">Como Citar esse trabalho?</h4>
                                 <div class="card">
                                     <div class="card-header">
-                                        Detalhes
+                                        <span class="font-roboto font-weight-bold">Detalhes</span>
                                     </div>
                                     <div class="card-body text-justify">
                                         <p class="details">Tipo de Apresentação: <span class="font-weight-bold">Pôster</span><br></p>
@@ -136,7 +141,7 @@
                     <div class="row mt-5">
                         <div class="card mb-5">
                             <div class="card-header">
-                                Resumo
+                                <span class="font-weight-bold font-roboto">Resumo</span>
                             </div>
                             <div class="card-body text-justify">
                                 <p>
@@ -156,17 +161,17 @@
                         </div>
                         <div class="card col-md-12 p-0">
                             <div class="card-header">
-                                Discussões
+                                <span class="font-weight-bold font-roboto">Discussões</span>
                             </div>
                             <div class="card-body text-justify col-md-12">
                                 <header class="col-md-8 m-auto" id="discussion-header">
-                                    <h4 class="text-orange text-center">Compartilhe suas ideias ou dúvidas com os autores!</h4>
+                                    <h4 class="text-orange text-center font-roboto font-weight-bold">Compartilhe suas ideias ou dúvidas com os autores!</h4>
                                     <div class="d-flex justify-content-center mt-4">
                                         <img src="assets/img/icone1.png" alt="">
                                         <img src="assets/img/icone2.png" alt="" class="mx-5">
                                         <img src="assets/img/icone3.png" alt="">
                                     </div>
-                                    <h5 class="font-weight-light text-center info-text">
+                                    <h5 class="font-weight-light text-center info-text mt-4">
                                         Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
                                     </h5>
                                 </header>
@@ -211,9 +216,9 @@
                             <button class="dropdown-item" data-toggle="modal" data-target="#answerModal" id="modalButton">Enviar Resposta</button>
                         </div>
                     </div>
-                    <button class="ml-2 btn fa-solid fa-heart text-white background-orange" id="like-button"></button>
-                    <p class="align-self-center question-like-answer mx-2"><span name="numLikes">0</span> Likes</p>
-                    <p class="align-self-center question-like-answer"><span name="numAnsw">0</span> Respostas</p>
+                    <button class="ml-2 btn fa-solid fa-heart text-white background-orange-solid" id="like-button"></button>
+                    <p class="align-self-center question-like-answer mx-2 mt-3"><span name="numLikes">0</span> Likes</p>
+                    <p class="align-self-center question-like-answer mt-3"><span name="numAnsw">0</span> Respostas</p>
                 </div>
             </div>
         </div>
