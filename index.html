@@ -17,20 +17,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
-    <title>Slaca 2019</title>
+    <title>SLACA 2019</title>
   </head>
   <body>
+    <!--Definição do container-->
     <div class="container-fluid">
+        <!--row principal, aqui vai ficar a barra lateral e o menu principal-->
         <div class="row">
+            <!--Sidebar, a partir de 996px ela ocupa 2 col do grid do bootstrap, antes disso ela ocupa 100 além disso, quando ela ocupa 2 col, ela ocupa 100% do vh-->
             <div class="col-12 col-sm-12 col-md-12 col-lg-2 m-0 p-0 sidebar sidebar-lg">
                 <header class="header-barra-esquerda">
                     <p class="header-barra-esquerda-text text-white text-center">
                         Slaca 2019
+                        <!--Toggle button do bootstrap que fazer o toggle do menu-->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fa-solid fa-bars"></i>
                         </button>
                     </p>
                 </header>
+                <!--Imagem do Slaca, quando bate 996px ela aparece, caso não, ela some-->
                 <img src="assets/img/dewey-4.png" alt="" class="d-none d-lg-block img-fluid">
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="list-group navbar-nav" >
@@ -82,10 +87,10 @@
                                 <img src="assets/img/video-presentation.png" class="img-fluid" alt="">
                             </div>
                             <div class="col-md-4">
-                                <div class="d-flex flex-row justify-content-center flex-wrap mt-sm-3-own">
-                                    <button class="btn background-orange text-white mt-1"><span><i class="fa-solid fa-download"></i></span> Download</button>
-                                    <button class="btn background-orange text-white mx-4 mt-1"><span><i class="fa-solid fa-star text-white p-1"></i></span></button>
-                                    <button class="btn background-orange text-white mt-1"><i class="ai ai-doi text-white ai-2x"></i></button>
+                                <div class="d-flex flex-row justify-content-between flex-wrap mt-sm-3-own">
+                                    <button class="btn background-orange text-white mt-1 py-0"><span><i class="fa-solid fa-download"></i></span> Download</button>
+                                    <button class="btn background-orange text-white mt-1 py-0"><span><i class="fa-solid fa-star text-white p-1"></i></span></button>
+                                    <button class="btn background-orange text-white mt-1 py-0"><i class="ai ai-doi text-white"></i></button>
                                 </div>
                                 <h4 class="text-orange text-justify mt-2">Como Citar esse trabalho?</h4>
                                 <div class="card">
@@ -182,14 +187,14 @@
                 </div>
                 <div class="d-flex flex-row align-items-center" id="question-assets">
                     <div class="dropdown">
-                        <button class="fa-solid fa-ellipsis-vertical btn" data-toggle="dropdown" id="dropdownDetails"></button>
+                        <button class="fa-solid fa-ellipsis-vertical btn bg-white text-orange" data-toggle="dropdown" id="dropdownDetails"></button>
                         <div class="dropdown-menu" id="dropdownDetails">
                             <p class="dropdown-item">Topic id: <span id="topicId"></span></p>
                             <hr>
                             <button class="dropdown-item" data-toggle="modal" data-target="#answerModal" id="modalButton">Enviar Resposta</button>
                         </div>
                     </div>
-                    <button class="ml-2 btn fa-solid fa-heart" id="like-button"></button>
+                    <button class="ml-2 btn fa-solid fa-heart text-white background-orange" id="like-button"></button>
                     <p class="align-self-center question-like-answer mx-2"><span name="numLikes">0</span> Likes</p>
                     <p class="align-self-center question-like-answer"><span name="numAnsw">0</span> Respostas</p>
                 </div>
