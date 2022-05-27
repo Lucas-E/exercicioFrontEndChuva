@@ -16,6 +16,11 @@
     <!--Academicons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
+    <!--Fonte google para adicionar a fonte quicksand-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
 
     <title>SLACA 2019</title>
   </head>
@@ -48,7 +53,10 @@
                     </ul>
                 </div>
             </div>
+            <!--Aqui começaa parte do conteúdo principal-->
             <div class="col-md-10 col-sm-12 col-12 m-0 p-0 bg-light">
+                <!--Aqui é definido o header. Note que a div pai tem a cor do background, pois depois do header, criaremos a div com o conteúdo-->
+                <!--É importante ver também que existe o toggle do menu, para abrir e fechar o menu em telas pequenas-->
                 <header class="bg-light px-5 header-conteudo">
                     <div class="d-flex justify-content-between flex-wrap">
                         <div class="mb-3 align-self-center">
@@ -78,6 +86,10 @@
                         </div>
                     </div>
                 </header>
+                <!--Aqui começa o menu principal-->
+                <!--Eu dividi o menu principal em 4 rows, sendo elas uma para a parte do vídeo e botões de download, favorito, doi, e a lista de integrantes e universidade-->
+                <!--Outra row para o Resumo e Discussões-->
+                <!--E finalmente uma row para o footer-->
                 <div class="px-5 pt-4 bg-white rounded m-1">
                     <div class="row">
                             <div class="col-md-8">
@@ -120,6 +132,7 @@
                                 </div>
                             </div>
                     </div>
+                    <!--Div para o conteúdo resumo e discussões -->
                     <div class="row mt-5">
                         <div class="card mb-5">
                             <div class="card-header">
@@ -136,6 +149,7 @@
                                             Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                         </p>
                                     </div>
+                                    <!--Botão que trata do collapse do readmore-->
                                     <a href="#readMoreCollapse" role="button" data-toggle="collapse">Ler Mais</a>
                                 </p>
                             </div>
@@ -158,8 +172,10 @@
                                 </header>
                                 <hr>
                                 <div class="d-flex justify-content-center">
+                                    <!--Botão que cria o tópico, ele chama a função discussionText() que fará o trabalho de tirar as childs de dentro do header do card, e colocará os elementos de input-->
                                     <button class="btn background-orange text-white m-auto" onclick="discussionText()"><span><i class="fa-solid fa-plus"></i></span> Criar tópico</button>
                                 </div>
+                                <!--Será dentro desta parte que jogaremos nossas perguntas e respostas-->
                                 <div class="mt-3" id="topics">
                                 </div>
                             </div>
@@ -174,7 +190,8 @@
             </div>
         </div>
     </div>
-
+    <!--Esta é uma parte bem interessante do arquivo, porque aqui geraremos com os templates, o formulário de discussão, de resposta, e o retorno que dá após a pergunta ser enviada-->
+    <!--O template 1 trata da parte do modelo da resposta, veja que trata de nome da pessoa que enviou, o assunto, o conteúdo, número de likes, número do id da pergunta, entre outras questões-->
     <template id="template-1">
         <div class="border" name="parentTopic">
             <div class="px-3 pt-3 rounded mb-3">
@@ -201,7 +218,7 @@
             </div>
         </div>
     </template>
-
+    <!--O template 2 trata do formulário para enviar um tópico-->
     <template id="template-2">
         <div class="form-group">
             <label for="name">Nome</label>
@@ -217,7 +234,7 @@
         </div>
         <button class="btn background-orange text-white btn-block" onclick="topicSent()">Enviar</button>
     </template>
-
+    <!--O template de 3 é a resposta após a confirmação do envio da pergunta-->
     <template id="template-3">
         <h4 class="text-orange text-center mb-5">Seu tópico foi enviado com sucesso! :D</h4>
         <h5 class="font-weight-light text-center info-text mb-5">
@@ -225,7 +242,7 @@
         </h5>
         <a href="" class="text-center">Descubra outros trabalhos!</a>
     </template>
-
+    <!--O template 4 trata da resposta à pergunta-->
     <template id="template-4">
         <div class="bg-light p-3">
             <header>
@@ -239,7 +256,7 @@
         </div>
     </template>
 
-    <!-- Modal -->
+    <!-- Modal que abre ao pressionar enviar resposta, dentro dos três pontinhos do tópico-->
     <div class="modal fade" id="answerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
         <div class="modal-content">

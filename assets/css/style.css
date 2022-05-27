@@ -1,3 +1,9 @@
+*{
+    font-family: quicksand;
+}
+.font-roboto{
+    font-family: roboto;
+}
 /*Css da barra esquerda*/
 .barra-esquerda{
     width: 220px;
